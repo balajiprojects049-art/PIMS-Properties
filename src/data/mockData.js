@@ -215,35 +215,58 @@ export const teamMembers = [
 
 export const achievements = [
     {
-        year: "2010",
+        year: "2021",
         title: "Company Founded",
-        description: "Started with a vision to transform real estate in Hyderabad",
+        description: "PIMS Properties LLP incorporated on 07/04/2021 under ROC Vijayawada (LLPIN: AAW-6044)",
     },
     {
-        year: "2015",
-        title: "100+ Projects",
-        description: "Completed over 100 successful residential and commercial projects",
-    },
-    {
-        year: "2018",
-        title: "Excellence Award",
-        description: "Received Best Real Estate Developer Award",
-    },
-    {
-        year: "2020",
-        title: "Expansion",
-        description: "Expanded operations to 5 major cities",
+        year: "2022",
+        title: "First Projects",
+        description: "Successfully launched initial residential and commercial property developments",
     },
     {
         year: "2023",
-        title: "Sustainability Leader",
-        description: "Recognized for eco-friendly construction practices",
+        title: "Expansion",
+        description: "Expanded our portfolio and strengthened our presence in Andhra Pradesh",
+    },
+    {
+        year: "2024",
+        title: "Growing Trust",
+        description: "Built strong relationships with clients and partners across the region",
+    },
+    {
+        year: "2025",
+        title: "Digital Presence",
+        description: "Launched comprehensive online platform for enhanced customer experience",
     },
 ];
 
 export const stats = [
-    { label: "Happy Clients", value: "1000+", icon: "😊" },
-    { label: "Projects Completed", value: "250+", icon: "✅" },
-    { label: "Sq.Ft. Developed", value: "5M+", icon: "📏" },
-    { label: "Years Experience", value: "13+", icon: "⭐" },
+    { label: "Happy Clients", value: "100+", icon: "😊" },
+    { label: "Projects Completed", value: "25+", icon: "✅" },
+    { label: "Sq.Ft. Developed", value: "500K+", icon: "📏" },
+    { label: "Years Experience", value: "3+", icon: "⭐" },
+];
+
+export const partners = [
+    {
+        id: 1,
+        name: "Pentakota Indira",
+        designation: "Designated Partner",
+        din: "09137583",
+        appointmentDate: "07/04/2021",
+        isSignatory: true,
+        image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop", // Placeholder - replace with actual image
+        bio: "Designated Partner with expertise in strategic planning and business development",
+    },
+    {
+        id: 2,
+        name: "Subrahmanya Swamy Venkata Sathya Buddha",
+        designation: "Designated Partner",
+        din: "09131515",
+        appointmentDate: "07/04/2021",
+        isSignatory: true,
+        image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop", // Placeholder - replace with actual image
+        bio: "Designated Partner specializing in operations and project management",
+    },
 ];

@@ -1,9 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaAward, FaUsers, FaHandshake } from 'react-icons/fa';
+import { FaAward, FaUsers, FaHandshake, FaUserTie, FaCheckCircle } from 'react-icons/fa';
 import HeroSection from '../components/HeroSection';
 import Button from '../components/Button';
-import { teamMembers, achievements, stats } from '../data/mockData';
+import { teamMembers, achievements, stats, partners } from '../data/mockData';
 
 const AboutUs = () => {
     const values = [
@@ -28,7 +28,7 @@ const AboutUs = () => {
         <div>
             {/* Hero Section */}
             <HeroSection
-                title="Building Dreams Since 2010"
+                title="Building Dreams Since 2021"
                 subtitle="Your trusted partner in creating exceptional real estate experiences"
                 backgroundImage="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&h=1080&fit=crop"
             >
@@ -49,13 +49,13 @@ const AboutUs = () => {
                             </h2>
                             <div className="space-y-4 text-gray-700 dark:text-gray-300 leading-relaxed">
                                 <p>
-                                    Founded in 2010, PIMS Properties began with a simple vision: to transform the real estate landscape in Hyderabad by delivering exceptional properties and unparalleled customer service.
+                                    Founded in April 2021 (07/04/2021), PIMS Properties LLP (LLPIN: AAW-6044) began with a clear vision: to transform the real estate landscape by delivering exceptional properties and unparalleled customer service in Puttaparthi and beyond.
                                 </p>
                                 <p>
-                                    What started as a small team with big dreams has grown into one of the most trusted names in real estate development. Over the years, we've built more than just properties – we've built relationships, communities, and dreams.
+                                    Registered under ROC Vijayawada, what started as a partnership with big dreams has quickly grown into a trusted name in real estate development. We've built more than just properties – we've built relationships, communities, and dreams.
                                 </p>
                                 <p>
-                                    Today, with over 250 completed projects and 1000+ happy families, we continue to push boundaries and set new standards in the industry. Our commitment to quality, transparency, and customer satisfaction remains unwavering.
+                                    Today, as an active LLP with committed designated partners, we continue to push boundaries and set new standards in the industry. Our commitment to quality, transparency, and customer satisfaction remains unwavering.
                                 </p>
                             </div>
                         </motion.div>
@@ -72,7 +72,7 @@ const AboutUs = () => {
                                 className="rounded-2xl shadow-2xl"
                             />
                             <div className="absolute -bottom-6 -right-6 card p-6">
-                                <div className="text-4xl font-bold gradient-text mb-2">13+</div>
+                                <div className="text-4xl font-bold gradient-text mb-2">3+</div>
                                 <p className="text-gray-600 dark:text-gray-400">Years of Excellence</p>
                             </div>
                         </motion.div>
@@ -231,6 +231,81 @@ const AboutUs = () => {
                                     {stat.value}
                                 </div>
                                 <div className="text-gray-300">{stat.label}</div>
+                            </motion.div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+            {/* Designated Partners */}
+            <section className="section-padding bg-white dark:bg-gray-900">
+                <div className="container-custom">
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        className="text-center mb-12"
+                    >
+                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading mb-4 text-gray-900 dark:text-white">
+                            Our <span className="gradient-text">Leadership</span>
+                        </h2>
+                        <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto text-lg">
+                            Designated Partners leading PIMS Properties LLP
+                        </p>
+                    </motion.div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                        {partners.map((partner, index) => (
+                            <motion.div
+                                key={partner.id}
+                                initial={{ opacity: 0, y: 30 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ delay: index * 0.2 }}
+                                className="card overflow-hidden group"
+                            >
+                                <div className="relative h-96 overflow-hidden">
+                                    <img
+                                        src={partner.image}
+                                        alt={partner.name}
+                                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                                    />
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
+
+                                    {/* Partner Details Overlay */}
+                                    <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                                        <div className="flex items-center gap-2 mb-2">
+                                            <FaUserTie className="text-gold-400" />
+                                            <span className="text-gold-400 text-sm font-semibold">{partner.designation}</span>
+                                        </div>
+                                        <h3 className="text-2xl font-bold font-heading mb-2">
+                                            {partner.name}
+                                        </h3>
+                                        {partner.isSignatory && (
+                                            <div className="flex items-center gap-2 text-emerald-400 text-sm">
+                                                <FaCheckCircle />
+                                                <span>Authorized Signatory</span>
+                                            </div>
+                                        )}
+                                    </div>
+                                </div>
+
+                                <div className="p-6 space-y-4">
+                                    <p className="text-gray-600 dark:text-gray-400">
+                                        {partner.bio}
+                                    </p>
+
+                                    <div className="grid grid-cols-2 gap-4 pt-4 border-t border-gray-200 dark:border-gray-700">
+                                        <div>
+                                            <p className="text-sm text-gray-500 dark:text-gray-500 mb-1">DIN</p>
+                                            <p className="font-semibold text-gray-900 dark:text-white">{partner.din}</p>
+                                        </div>
+                                        <div>
+                                            <p className="text-sm text-gray-500 dark:text-gray-500 mb-1">Appointed</p>
+                                            <p className="font-semibold text-gray-900 dark:text-white">{partner.appointmentDate}</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </motion.div>
                         ))}
                     </div>
