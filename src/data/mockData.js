@@ -242,10 +242,9 @@ export const achievements = [
 ];
 
 export const stats = [
-    { label: "Happy Clients", value: "100+", icon: "😊" },
-    { label: "Projects Completed", value: "25+", icon: "✅" },
+    { label: "Projects Completed", value: "6", icon: "✅" },
     { label: "Sq.Ft. Developed", value: "500K+", icon: "📏" },
-    { label: "Years Experience", value: "3+", icon: "⭐" },
+    { label: "Years Experience", value: "15+", icon: "⭐" },
 ];
 
 export const partners = [

@@ -72,7 +72,7 @@ const AboutUs = () => {
                                 className="rounded-2xl shadow-2xl"
                             />
                             <div className="absolute -bottom-6 -right-6 card p-6">
-                                <div className="text-4xl font-bold gradient-text mb-2">3+</div>
+                                <div className="text-4xl font-bold gradient-text mb-2">15+</div>
                                 <p className="text-gray-600 dark:text-gray-400">Years of Excellence</p>
                             </div>
                         </motion.div>
