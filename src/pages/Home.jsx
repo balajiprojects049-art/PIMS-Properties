@@ -17,7 +17,7 @@ const Home = () => {
             {/* Hero Section */}
             <HeroSection
                 title="Discover Your Dream Property"
-                subtitle="Premium plots, luxury constructions, and exceptional real estate services in Hyderabad"
+                subtitle="Premium plots, luxury constructions, and exceptional real estate services in Puttaparthi and Bangalore"
                 showSearch={false}
             >
                 <Button variant="primary" icon={<FaPhone />}>
