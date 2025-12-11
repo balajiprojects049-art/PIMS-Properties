@@ -216,7 +216,7 @@ const AboutUs = () => {
             {/* Stats */}
             <section className="section-padding bg-gradient-to-br from-navy-900 via-navy-800 to-emerald-900 text-white">
                 <div className="container-custom">
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                         {stats.map((stat, index) => (
                             <motion.div
                                 key={index}

@@ -31,7 +31,7 @@ const Home = () => {
             {/* Stats Section */}
             <section className="section-padding bg-white dark:bg-gray-900">
                 <div className="container-custom">
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
                         {stats.map((stat, index) => (
                             <motion.div
                                 key={index}
