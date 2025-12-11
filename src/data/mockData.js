@@ -106,13 +106,13 @@ export const constructionProjects = [
     },
     {
         id: 4,
-        title: "Interior Design Services",
-        category: "Interior",
-        location: "Puttaparthi & Bangalore",
-        duration: "2-4 months",
-        image: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800&h=600&fit=crop",
-        description: "Complete interior design and execution for residential and commercial spaces.",
-        features: ["3D Design", "Custom Furniture", "Lighting", "Decor"],
+        title: "Fly Ash Bricks & AAC Blocks Unit",
+        category: "Industrial",
+        location: "Penukonda Highway",
+        duration: "Ongoing",
+        image: "https://images.unsplash.com/photo-1581094794329-cd1096d7a43f?w=800&h=600&fit=crop",
+        description: "Approved MSME CDP Cluster project funded by State & Central Government.",
+        features: ["Govt Approved", "Eco-friendly", "Manufacturing Unit", "Strategic Location"],
     },
 ];
 
@@ -260,12 +260,12 @@ export const partners = [
     },
     {
         id: 2,
-        name: "Subrahmanya Swamy Venkata Sathya Buddha",
+        name: "Buddha V. S. Subramanya Swamy",
         designation: "Designated Partner",
         din: "09131515",
         appointmentDate: "07/04/2021",
         isSignatory: true,
         image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop", // Placeholder - replace with actual image
-        bio: "Designated Partner specializing in operations and project management",
+        bio: "Native of Anakapalle and settled in Puttaparthi. Retired Assistant Registrar at Sri Sathya Sai University (served from 1988). Established PIMS Properties LLP in 2021 for construction works in Puttaparthi and Devanahalli. Currently leading an approved MSME CDP Cluster project for Fly Ash/AAC Blocks at Penukonda highway.",
     },
 ];
