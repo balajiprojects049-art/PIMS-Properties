@@ -49,19 +49,19 @@ const AboutUs = () => {
                             </h2>
                             <div className="space-y-4 text-gray-700 dark:text-gray-300 leading-relaxed text-lg">
                                 <p>
-                                    I, Buddha V. S. Subramanya Swamy (60 years) wish to introduce myself that I am native from Anakapalle and permanently settled at Puttaparthi, Sri Sathya Sai District.
+                                    I, <strong>Buddha V. S. Subramanya Swamy</strong> (60 years) wish to introduce myself that I am <strong>native from Anakapalle</strong> and <strong>permanently settled at Puttaparthi</strong>, Sri Sathya Sai District.
                                 </p>
                                 <p>
-                                    I studied B.Sc and worked for three years in 1986 at Godavari Fertilizers, Kakinada and later from 1988 onwards, I served as Assistant Registrar in Sri Sathya Sai University and recently retired.
+                                    I studied B.Sc and worked for three years in 1986 at <strong>Godavari Fertilizers, Kakinada</strong> and later from 1988 onwards, I served as <strong>Assistant Registrar in Sri Sathya Sai University</strong> and recently retired.
                                 </p>
                                 <p>
-                                    As District President, I also involved in multiple service activities at my native Anakapalle rural villages through Sathya Sai Organisations and seek BABA’s Blessings!
+                                    As <strong>District President</strong>, I also involved in multiple service activities at my native Anakapalle rural villages through <strong>Sathya Sai Organisations</strong> and seek <strong>BABA’s Blessings!</strong>
                                 </p>
                                 <p>
-                                    I have established PIMS Properties LLP in 2021 and through this Company I have coordinated business activities like layouts establishments and construction works at Puttaparthi and Devanahalli areas.
+                                    I have established <strong>PIMS Properties LLP in 2021</strong> and through this Company I have coordinated business activities like layouts establishments and construction works at <strong>Puttaparthi and Devanahalli areas</strong>.
                                 </p>
                                 <p>
-                                    It is to inform that my MSME CDP Cluster project is approved by the PTP Collector for establishing Fly Ash bricks/AAC Blocks manufacturing unit at Penukonda highway road, which will be totally funding by the State & Central Government.
+                                    It is to inform that my <strong>MSME CDP Cluster project</strong> is approved by the PTP Collector for establishing <strong>Fly Ash bricks/AAC Blocks manufacturing unit</strong> at <strong>Penukonda highway road</strong>, which will be <strong>totally funding by the State & Central Government</strong>.
                                 </p>
                                 <p>
                                     Since I have full free time now and I want to explore more business activities further.
