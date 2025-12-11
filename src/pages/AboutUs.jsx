@@ -45,17 +45,26 @@ const AboutUs = () => {
                             viewport={{ once: true }}
                         >
                             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading mb-6 text-gray-900 dark:text-white">
-                                Our <span className="gradient-text">Story</span>
+                                Founder's <span className="gradient-text">Message</span>
                             </h2>
-                            <div className="space-y-4 text-gray-700 dark:text-gray-300 leading-relaxed">
+                            <div className="space-y-4 text-gray-700 dark:text-gray-300 leading-relaxed text-lg">
                                 <p>
-                                    Founded in April 2021 (07/04/2021), PIMS Properties LLP (LLPIN: AAW-6044) began with a clear vision: to transform the real estate landscape by delivering exceptional properties and unparalleled customer service in Puttaparthi and beyond.
+                                    I, Buddha V. S. Subramanya Swamy (60 years) wish to introduce myself that I am native from Anakapalle and permanently settled at Puttaparthi, Sri Sathya Sai District.
                                 </p>
                                 <p>
-                                    Registered under ROC Vijayawada, what started as a partnership with big dreams has quickly grown into a trusted name in real estate development. We've built more than just properties – we've built relationships, communities, and dreams.
+                                    I studied B.Sc and worked for three years in 1986 at Godavari Fertilizers, Kakinada and later from 1988 onwards, I served as Assistant Registrar in Sri Sathya Sai University and recently retired.
                                 </p>
                                 <p>
-                                    Today, as an active LLP with committed designated partners, we continue to push boundaries and set new standards in the industry. Our commitment to quality, transparency, and customer satisfaction remains unwavering.
+                                    As District President, I also involved in multiple service activities at my native Anakapalle rural villages through Sathya Sai Organisations and seek BABA’s Blessings!
+                                </p>
+                                <p>
+                                    I have established PIMS Properties LLP in 2021 and through this Company I have coordinated business activities like layouts establishments and construction works at Puttaparthi and Devanahalli areas.
+                                </p>
+                                <p>
+                                    It is to inform that my MSME CDP Cluster project is approved by the PTP Collector for establishing Fly Ash bricks/AAC Blocks manufacturing unit at Penukonda highway road, which will be totally funding by the State & Central Government.
+                                </p>
+                                <p>
+                                    Since I have full free time now and I want to explore more business activities further.
                                 </p>
                             </div>
                         </motion.div>
