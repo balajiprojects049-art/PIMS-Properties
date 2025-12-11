@@ -211,7 +211,7 @@ const ConstructionServices = () => {
                                 Why Choose <span className="text-gold-400">PIMS</span> Construction?
                             </h2>
                             <p className="text-gray-200 text-lg mb-8">
-                                With over 13 years of experience and 250+ successful projects, we bring unmatched expertise and dedication to every construction.
+                                With over 3 years of experience and 25+ successful projects, we bring unmatched expertise and dedication to every construction.
                             </p>
 
                             <div className="space-y-4">
@@ -258,7 +258,7 @@ const ConstructionServices = () => {
                                 className="rounded-2xl shadow-2xl"
                             />
                             <div className="absolute -bottom-6 -left-6 card p-6 max-w-xs">
-                                <div className="text-4xl font-bold gradient-text mb-2">250+</div>
+                                <div className="text-4xl font-bold gradient-text mb-2">25+</div>
                                 <p className="text-gray-600 dark:text-gray-400">Projects Completed</p>
                             </div>
                         </motion.div>

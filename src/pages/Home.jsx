@@ -18,7 +18,7 @@ const Home = () => {
             <HeroSection
                 title="Discover Your Dream Property"
                 subtitle="Premium plots, luxury constructions, and exceptional real estate services in Hyderabad"
-                showSearch={true}
+                showSearch={false}
             >
                 <Button variant="primary" icon={<FaPhone />}>
                     Book Site Visit
