@@ -31,19 +31,19 @@ const Contact = () => {
         {
             icon: <FaPhone />,
             title: 'Phone',
-            details: ['+91 98765 43210', '+91 98765 43211'],
-            link: 'tel:+919876543210',
+            details: ['+91 94901 79123'],
+            link: 'tel:+919490179123',
         },
         {
             icon: <FaEnvelope />,
             title: 'Email',
-            details: ['info@pimsproperties.com', 'sales@pimsproperties.com'],
-            link: 'mailto:info@pimsproperties.com',
+            details: ['sspn12@gmail.com'],
+            link: 'mailto:sspn12@gmail.com',
         },
         {
             icon: <FaMapMarkerAlt />,
             title: 'Address',
-            details: ['No.3, 6th floor Penthouse, Gokul Sai Heritage Building', 'Gokulam, Puttaparthi, Sri Sathya Sai District - 515134, AP'],
+            details: ['No.3, 6th floor Penthouse, Gokul Sai Heritage Building', 'Gokulam, Puttaparthi, Sri Sathya Sai District, Pin: 515134, AP'],
             link: '#map',
         },
         {
@@ -57,8 +57,8 @@ const Contact = () => {
     const offices = [
         {
             name: 'PIMS Properties LLP - Head Office',
-            address: 'No.3, 6th floor Penthouse, Gokul Sai Heritage Building, Gokulam, Puttaparthi, Sri Sathya Sai District - 515134, AP',
-            phone: '+91 98765 43210',
+            address: 'No.3, 6th floor Penthouse, Gokul Sai Heritage Building, Gokulam, Puttaparthi, Sri Sathya Sai District, Pin: 515134, AP',
+            phone: '+91 94901 79123',
         },
     ];
 
@@ -165,7 +165,7 @@ const Contact = () => {
                                             onChange={handleChange}
                                             required
                                             className="input-field"
-                                            placeholder="+91 98765 43210"
+                                            placeholder="+91 94901 79123"
                                         />
                                     </div>
                                 </div>

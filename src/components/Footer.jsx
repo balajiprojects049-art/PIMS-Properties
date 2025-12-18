@@ -52,16 +52,16 @@ const Footer = () => {
                             <div className="flex items-start gap-3">
                                 <FaMapMarkerAlt className="text-gold-500 mt-1 flex-shrink-0" />
                                 <p className="text-sm text-gray-300">
-                                    No.3, 6th floor Penthouse, Gokul Sai Heritage Building, Gokulam, Puttaparthi, Sri Sathya Sai District - 515134, AP
+                                    No.3, 6th floor Penthouse, Gokul Sai Heritage Building, Gokulam, Puttaparthi, Sri Sathya Sai District, Pin: 515134, AP
                                 </p>
                             </div>
                             <div className="flex items-center gap-3">
                                 <FaPhone className="text-gold-500 flex-shrink-0" />
-                                <p className="text-sm text-gray-300">+91 98765 43210</p>
+                                <p className="text-sm text-gray-300">+91 94901 79123</p>
                             </div>
                             <div className="flex items-center gap-3">
                                 <FaEnvelope className="text-gold-500 flex-shrink-0" />
-                                <p className="text-sm text-gray-300">info@pimsproperties.com</p>
+                                <p className="text-sm text-gray-300">sspn12@gmail.com</p>
                             </div>
                         </div>
                     </div>

@@ -7,6 +7,9 @@ import Button from '../components/Button';
 import { constructionProjects, services } from '../data/mockData';
 
 const ConstructionServices = () => {
+    const completedProjects = constructionProjects.filter(p => p.duration === 'Completed');
+    const runningProjects = constructionProjects.filter(p => p.duration === 'Running');
+
     const workflow = [
         {
             step: '01',
@@ -122,8 +125,8 @@ const ConstructionServices = () => {
                 </div>
             </section>
 
-            {/* Portfolio/Projects Gallery */}
-            <section className="section-padding bg-white dark:bg-gray-900">
+            {/* Projects Completed Section */}
+            <section className="section-padding bg-white dark:bg-gray-900 border-b border-gray-100 dark:border-gray-800">
                 <div className="container-custom">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
@@ -132,15 +135,91 @@ const ConstructionServices = () => {
                         className="text-center mb-12"
                     >
                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading mb-4 text-gray-900 dark:text-white">
-                            Our <span className="gradient-text">Portfolio</span>
+                            Projects <span className="gradient-text">Completed</span>
                         </h2>
                         <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto text-lg">
-                            Showcasing our completed projects and ongoing developments
+                            Successfully delivered excellence through these landmark projects
                         </p>
                     </motion.div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {constructionProjects.map((project, index) => (
+                        {completedProjects.map((project, index) => (
+                            <motion.div
+                                key={project.id}
+                                initial={{ opacity: 0, scale: 0.9 }}
+                                whileInView={{ opacity: 1, scale: 1 }}
+                                viewport={{ once: true }}
+                                transition={{ delay: index * 0.1 }}
+                                className="card overflow-hidden group"
+                            >
+                                <div className="relative h-72 overflow-hidden">
+                                    <img
+                                        src={project.image}
+                                        alt={project.title}
+                                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                                    />
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
+                                    <div className="absolute top-4 left-4">
+                                        <span className="px-3 py-1 bg-emerald-500 text-white rounded-full text-xs font-semibold">
+                                            {project.category}
+                                        </span>
+                                    </div>
+                                    <div className="absolute bottom-4 left-4 right-4 text-white">
+                                        <h3 className="text-xl font-bold font-heading mb-1">
+                                            {project.title}
+                                        </h3>
+                                        <p className="text-sm opacity-90">📍 {project.location}</p>
+                                    </div>
+                                </div>
+
+                                <div className="p-6">
+                                    <p className="text-gray-600 dark:text-gray-400 text-sm mb-4">
+                                        {project.description}
+                                    </p>
+
+                                    <div className="space-y-2 mb-4">
+                                        {project.features.map((feature, idx) => (
+                                            <div key={idx} className="flex items-center gap-2 text-sm text-gray-700 dark:text-gray-300">
+                                                <FaCheck className="text-emerald-500 flex-shrink-0" size={12} />
+                                                <span>{feature}</span>
+                                            </div>
+                                        ))}
+                                    </div>
+
+                                    <div className="flex items-center justify-between pt-4 border-t border-gray-200 dark:border-gray-700">
+                                        <span className="text-sm font-semibold text-emerald-600 dark:text-emerald-400">
+                                            ✅ {project.duration}
+                                        </span>
+                                        <Button variant="outline" className="text-xs px-4 py-2">
+                                            View Details
+                                        </Button>
+                                    </div>
+                                </div>
+                            </motion.div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+            {/* Running Projects Section */}
+            <section className="section-padding bg-gray-50 dark:bg-gray-800">
+                <div className="container-custom">
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        className="text-center mb-12"
+                    >
+                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading mb-4 text-gray-900 dark:text-white">
+                            Running <span className="gradient-text">Projects</span>
+                        </h2>
+                        <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto text-lg">
+                            Currently building the future of real estate
+                        </p>
+                    </motion.div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        {runningProjects.map((project, index) => (
                             <motion.div
                                 key={project.id}
                                 initial={{ opacity: 0, scale: 0.9 }}
@@ -184,8 +263,8 @@ const ConstructionServices = () => {
                                     </div>
 
                                     <div className="flex items-center justify-between pt-4 border-t border-gray-200 dark:border-gray-700">
-                                        <span className="text-sm text-gray-600 dark:text-gray-400">
-                                            ⏱️ {project.duration}
+                                        <span className="text-sm font-semibold text-gold-600 dark:text-gold-400">
+                                            🏗️ {project.duration}
                                         </span>
                                         <Button variant="outline" className="text-xs px-4 py-2">
                                             View Details

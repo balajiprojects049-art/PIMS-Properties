@@ -1,9 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaAward, FaUsers, FaHandshake, FaUserTie, FaCheckCircle } from 'react-icons/fa';
+import { FaAward, FaUsers, FaHandshake, FaUserTie, FaCheckCircle, FaCheck, FaRunning } from 'react-icons/fa';
 import HeroSection from '../components/HeroSection';
 import Button from '../components/Button';
-import { teamMembers, achievements, stats, partners } from '../data/mockData';
+import { teamMembers, achievements, stats, partners, constructionProjects } from '../data/mockData';
 
 const AboutUs = () => {
     const values = [
@@ -242,6 +242,85 @@ const AboutUs = () => {
                                 <div className="text-gray-300">{stat.label}</div>
                             </motion.div>
                         ))}
+                    </div>
+                </div>
+            </section>
+
+            {/* Project Showcase Section */}
+            <section className="section-padding bg-gray-50 dark:bg-gray-800">
+                <div className="container-custom">
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        className="text-center mb-16"
+                    >
+                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading mb-4 text-gray-900 dark:text-white">
+                            Our <span className="gradient-text">Portfolio</span>
+                        </h2>
+                        <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto text-lg">
+                            Tracking our success through completed and ongoing developments
+                        </p>
+                    </motion.div>
+
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                        {/* Completed Projects */}
+                        <motion.div
+                            initial={{ opacity: 0, x: -30 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true }}
+                            className="card p-8 bg-white dark:bg-gray-900 shadow-xl border-l-4 border-emerald-500"
+                        >
+                            <div className="flex items-center gap-4 mb-8">
+                                <div className="w-12 h-12 rounded-full bg-emerald-100 dark:bg-emerald-900/30 flex items-center justify-center text-emerald-500">
+                                    <FaCheck size={24} />
+                                </div>
+                                <h3 className="text-2xl font-bold font-heading text-gray-900 dark:text-white">
+                                    Projects Completed <span className="text-emerald-500 ml-2">(4)</span>
+                                </h3>
+                            </div>
+                            <ul className="space-y-6">
+                                {constructionProjects
+                                    .filter(p => p.duration === 'Completed')
+                                    .map((project, i) => (
+                                        <li key={i} className="flex items-center gap-4 group">
+                                            <div className="w-2 h-2 rounded-full bg-emerald-500 group-hover:scale-150 transition-transform" />
+                                            <span className="text-lg text-gray-700 dark:text-gray-300 font-medium">
+                                                {project.title}
+                                            </span>
+                                        </li>
+                                    ))}
+                            </ul>
+                        </motion.div>
+
+                        {/* Running Projects */}
+                        <motion.div
+                            initial={{ opacity: 0, x: 30 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true }}
+                            className="card p-8 bg-white dark:bg-gray-900 shadow-xl border-l-4 border-gold-500"
+                        >
+                            <div className="flex items-center gap-4 mb-8">
+                                <div className="w-12 h-12 rounded-full bg-gold-100 dark:bg-gold-900/30 flex items-center justify-center text-gold-500">
+                                    <FaRunning size={24} />
+                                </div>
+                                <h3 className="text-2xl font-bold font-heading text-gray-900 dark:text-white">
+                                    Running Projects <span className="text-gold-500 ml-2">(4)</span>
+                                </h3>
+                            </div>
+                            <ul className="space-y-6">
+                                {constructionProjects
+                                    .filter(p => p.duration === 'Running')
+                                    .map((project, i) => (
+                                        <li key={i} className="flex items-center gap-4 group">
+                                            <div className="w-2 h-2 rounded-full bg-gold-500 group-hover:scale-150 transition-transform" />
+                                            <span className="text-lg text-gray-700 dark:text-gray-300 font-medium">
+                                                {project.title}
+                                            </span>
+                                        </li>
+                                    ))}
+                            </ul>
+                        </motion.div>
                     </div>
                 </div>
             </section>
